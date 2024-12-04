@@ -33,5 +33,6 @@ To get started with this template, follow these steps:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/react-portfolio-template.git
+git clone https://github.com/Alteyae/reactjs-portfolio.git
+
 # reactjs-portfolio
