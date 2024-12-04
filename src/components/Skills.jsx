@@ -1,5 +1,6 @@
 import React from "react";
 import { SKILLS } from "../utils/data";
+import { motion } from "motion/react";
 
 const Skills = () => {
   return (
@@ -8,7 +9,15 @@ const Skills = () => {
         
         <h5 className="text-xl font-medium mb-5">Sample Works</h5>
         
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <motion.div
+        animate= {{
+          x: [0, 50, -50, 0],
+        }}
+        transition={{
+          repeat: Infinity,
+          duration: 1
+        }}
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {SKILLS.map((skill) => (
             <SkillsCard
               key={skill.id}
@@ -17,7 +26,7 @@ const Skills = () => {
               comment={skill.comment}
             />
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -1,9 +1,9 @@
 export const PROFILE_DATA = {
-  profilePicture: "https://via.placeholder.com/150",
-  name: "Kai Rodriguez",
-  tagline: `A full-stack developer passionate about creating innovative solutions and bridging technology with user-centric design.`,
+  profilePicture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_xq6rYPnsINHjdtiNusaPCaUXavcurRWyntKcrvwPPDQFhvnuRox36CrDCqVPD6sQnPA&usqp=CAU",
+  name: "Sef Orion",
+  tagline: `Senyor San Jose - "good luck is bad luck becuase jinx" `,
   jobTitle: "Senior Software Engineer",
-  location: "San Francisco, CA",
+  location: "Los Amigos, CALINAN",
   yearsOfExperience: 6,
   skills: [
     "Python",
@@ -19,47 +19,29 @@ export const PROFILE_DATA = {
     "SQL",
     "CI/CD",
   ],
-  email: "kai.rodriguez@techpro.com",
-  phone: "415-789-1234",
-  website: "https://www.linkedin.com/in/kairodriguez/",
+  email: "j.orion.536041@umindanao.edu.ph",
+  phone: "420-6969-8008",
+  website: "https://www.linkedin.com/in/jlorion/",
 };
 
 export const SKILLS = [
   {
     id: "01",
-    image: "https://via.placeholder.com/300",
+    image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f8d4b009-aee0-4f3e-9b24-5b635c7e0233/dcu32nw-ddc81fcb-8ad0-44aa-a5dc-4ffb49d73fa2.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y4ZDRiMDA5LWFlZTAtNGYzZS05YjI0LTViNjM1YzdlMDIzM1wvZGN1MzJudy1kZGM4MWZjYi04YWQwLTQ0YWEtYTVkYy00ZmZiNDlkNzNmYTIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.0ramnpfT87G6dIoz7Ok5NQXZi7vDzOXRs8WLHaB_kdI",
     title: "Python",
     comment: `Python is my primary language of choice. I've used it extensively in backend development, data analysis, and building scalable web applications across various industries.`,
   },
   {
     id: "02",
-    image: "https://via.placeholder.com/300",
-    title: "Vue.js",
+    image: "https://i.pinimg.com/564x/81/8a/a0/818aa091d5848b633453ec02af995ec6.jpg",
+    title: "Reactjs",
     comment: `I'm deeply passionate about creating reactive and responsive user interfaces with Vue.js. My approach focuses on clean architecture and component-based design.`,
   },
   {
     id: "03",
-    image: "https://via.placeholder.com/300",
+    image: "https://upload.wikimedia.org/wikipedia/en/2/2c/Docking_poster.jpg",
     title: "Docker",
     comment: `Containerization is crucial for modern software deployment. I've implemented Docker solutions that streamline development workflows and ensure consistent environments.`,
-  },
-  {
-    id: "04",
-    image: "https://via.placeholder.com/300",
-    title: "AWS",
-    comment: `Amazon Web Services is my go-to cloud platform. I've designed and deployed scalable cloud architectures, leveraging services like EC2, S3, and Lambda.`,
-  },
-  {
-    id: "05",
-    image: "https://via.placeholder.com/300",
-    title: "GraphQL",
-    comment: `GraphQL has revolutionized how I approach API design. I've implemented efficient, flexible data querying solutions that improve overall system performance.`,
-  },
-  {
-    id: "06",
-    image: "https://via.placeholder.com/300",
-    title: "CI/CD",
-    comment: `Continuous Integration and Continuous Deployment are critical for modern software development. I've set up robust pipelines that automate testing and deployment processes.`,
   },
 ];
 
@@ -88,7 +70,7 @@ export const WORK_EXPERIENCE = [
 ];
 
 export const ABOUT_ME_DATA = {
-  introduction: "Hello! I'm Kai Rodriguez, a versatile software engineer with a passion for solving complex technological challenges and creating innovative digital solutions.",
+  introduction: "Hello! I'm Sef Orion, a versatile software engineer with a passion for solving complex technological challenges and creating innovative digital solutions.",
   background: "With a Master's degree in Computer Science from Stanford University, I've developed a strong foundation in software engineering principles and emerging technologies.",
   skills: "My technical expertise spans full-stack development, cloud computing, and advanced programming paradigms. I specialize in creating scalable, efficient, and user-friendly software solutions.",
   projects: "Notable projects include a machine learning-powered recommendation system, a real-time collaboration platform, and a distributed data processing framework that improved system efficiency by 40%.",
@@ -96,8 +78,8 @@ export const ABOUT_ME_DATA = {
   careerGoals: "My objective is to continue pushing the boundaries of software engineering, contribute to meaningful technological innovations, and make a positive impact through technology.",
 
   stats: {
-    yearsOfExperience: '6+',
-    numberOfProjects: 15,
-    certificationsEarned: 6,
+    yearsOfExperience: '100+',
+    numberOfProjects: 1500,
+    certificationsEarned: 600,
   },
 };

@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoMdMail } from "react-icons/io";
 import { PROFILE_DATA } from "../utils/data";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { MdLink } from "react-icons/md";
+import { motion } from "motion/react";
 
 const Contact = () => {
+
+  
 
   return (
     <section className="max-w-screen-xl mx-auto px-6 pb-20" id="contact">
@@ -31,7 +34,7 @@ const Contact = () => {
           <h5 className="md:hidden text-cyan-300 text-lg font-medium mt-4 pb-5">
             Contact Form
           </h5>
-          <form className="flex flex-col" action= "formsparks_link_here">
+          <form className="flex flex-col" action= "https://submit-form.com/rKaIOqmn7">
             <input
               type="text"
               name="fullname"
@@ -59,7 +62,13 @@ const Contact = () => {
               autoComplete="off"
             ></textarea>
 
-            <button className="primary-btn text-white">SUBMIT</button>
+            <motion.button
+            
+            
+            animate= {{
+              x: 100, 
+            }}
+            className="primary-btn text-white">SUBMIT</motion.button>
           </form>
         </div>
       </div>

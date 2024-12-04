@@ -5,8 +5,10 @@ import { MdOutlineBadge } from "react-icons/md";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { PROFILE_DATA } from "../utils/data";
+import { motion } from "motion/react";
+import { easeInOut } from "motion";
 
-import PROFILE_PIC from "../assets/Temporary_Profile.jpg";
+const PROFILE_PIC = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_xq6rYPnsINHjdtiNusaPCaUXavcurRWyntKcrvwPPDQFhvnuRox36CrDCqVPD6sQnPA&usqp=CAU";
 
 const Hero = () => {
   const {
@@ -24,9 +26,16 @@ const Hero = () => {
       className="max-w-screen-xl flex flex-col gap-14 md:flex-row md:items-center pt-16 md:pt-28 pb-20 px-6 mx-auto"
       id="hero"
     >
-      <div className="flex-1 text-center md:text-left z-[1]">
+      <motion.div 
+      animate= {{y: [0, 100, 0, -100, 0]}}
+      transition={{
+        duration: 2, 
+        ease: "easeInOut", 
+        repeat: Infinity
+      }}
+      className="flex-1 text-center md:text-left z-[1]">
         <span className="text-xs md:text-sm text-black font-thin">
-          A Bubble.io Developer
+          A UM Enigma Developer
         </span>
 
         <h2 className="text-3xl mt-3 md:text-5xl text-black md:mt-5">{name}</h2>
@@ -36,9 +45,18 @@ const Hero = () => {
 
 
 
-      </div>
+      </motion.div>
 
-      <div className="flex gap-5 justify-center md:gap-3 lg:gap-5 z-[1]">
+      <motion.div 
+      animate={{
+        rotate: [90, 180, 0]
+      }}
+      transition={{
+        duration: 3, 
+        ease: "easeIn",
+        repeat: Infinity
+      }}
+      className="flex gap-5 justify-center md:gap-3 lg:gap-5 z-[1]">
         <div className="w-[403px] bg-gradient-to-br from-white-950 to-slate-900 rounded-lg border border-white-950 p-6">
           <div className="flex items-center justify-center">
             <img className="hero-img" src={PROFILE_PIC} alt="img one" />
@@ -105,7 +123,7 @@ const Hero = () => {
 </div>
 
         </div>
-      </div>
+      </motion.div>
 
       <div class="ui-circle absolute top-6 md:top-10 -left-10 md:left-0"></div>
     </section>

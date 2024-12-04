@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 
 import { RiCloseFill } from "react-icons/ri";
 import { CgMenuMotion } from "react-icons/cg";
+import { motion } from "motion/react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState();
@@ -18,23 +19,34 @@ const Navbar = () => {
         <MobileNavbar isOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       )}
 
-      <div className="w-screen hidden md:flex items-center justify-center py-4 fixed top-0 z-10 ">
+      <motion.div 
+      animate={{ x: [ 0, 100, 0] }}
+      transition={{ ease: "easeOut", duration: 2, repeat: Infinity }}
+      className="w-screen hidden md:flex items-center justify-center py-4 fixed top-0 z-10 ">
         <nav className="max-w-screen-xl mx-auto py-3 px-6 bg-navbg rounded-xl shadow-lg shadow-sky-600/10">
           <ul className="flex items-center gap-14">
             <li>
-              <Link to="hero" smooth spy offset={-80} className="menu-item">
+              <motion.a 
+              animate = {{y: [0, 100, 0]}}
+              transition={{ ease: "easeOut", duration: 2, repeat: Infinity }}
+              to="hero" smooth spy offset={-80} className="menu-item">
                 Home
-              </Link>
+              </motion.a>
             </li>
 
             <li>
-              <Link to="skills" smooth spy offset={-80} className="menu-item">
+              <motion.a
+              animate = {{y: [100, 0, 100, 0, 100]}}
+              transition={{ ease: "easeOut", duration: 2, repeat: Infinity }} 
+              to="skills" smooth spy offset={-80} className="menu-item">
                 Skills
-              </Link>
+              </motion.a>
             </li>
 
             <li>
-              <Link
+              <motion.a
+              animate = {{y: [100, 0, 100, 0, 100]}}
+              transition={{ ease: "easeOut", duration: 2, repeat: Infinity }}
                 to="experience"
                 smooth
                 spy
@@ -42,7 +54,7 @@ const Navbar = () => {
                 className="menu-item"
               >
                 Work Experience
-              </Link>
+              </motion.a>
             </li>
 
             <li>
@@ -58,7 +70,7 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
-      </div>
+      </motion.div>
 
       <div className="p-3 fixed top-0 right-0 z-50">
         <button
